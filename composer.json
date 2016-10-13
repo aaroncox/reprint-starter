@@ -12,6 +12,10 @@
         "run": [
             "echo 'Started web server on http://localhost:8888'",
             "php -S localhost:8888 -t public"
+        ],
+        "post-create-project-cmd": [
+            "cp -n resources/config/config.yaml.example resources/config/config.yaml",
+            "cp -n resources/config/routes.yaml.example resources/config/routes.yaml"
         ]
     }
 }
