@@ -1,0 +1,20 @@
+# Choose the locale to localize content for
+locale: 'en'
+
+# Choose a theme by name
+blog:
+  theme: 'foundation6-default'
+  title: 'reprint powered blog'
+
+# Blog Configuration
+steem:
+  # Steem Node to retreive data
+  host: 'https://node.steem.ws'
+  # Accounts to load activity of
+  accounts:
+    'greymass':
+      - post
+      - reblog
+  # Only load posts with these tags
+  tags:
+    - greymass

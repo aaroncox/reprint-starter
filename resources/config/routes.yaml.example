@@ -1,0 +1,14 @@
+config.routes:
+  # Homepage route to handle the options provided in the configuration
+  homepage:
+    name: 'homepage'
+    pattern: /
+    method: ['get']
+    controller: 'Reprint\Controller\Home::homeAction'
+
+  # View Post
+  post_view:
+    name: 'post_view'
+    pattern: /{category}/@{author}/{permlink}
+    method: ['get']
+    controller: 'Reprint\Controller\Blog::postAction'

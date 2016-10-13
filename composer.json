@@ -1,0 +1,17 @@
+{
+    "name": "greymass/reprint-starter",
+    "description": "",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "greymass/reprint": "dev-develop"
+    },
+    "scripts": {
+        "run": [
+            "echo 'Started web server on http://localhost:8888'",
+            "php -S localhost:8888 -t public"
+        ]
+    }
+}

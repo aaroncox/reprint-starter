@@ -1,0 +1,8 @@
+version: '2'
+services:
+  development:
+    build: ./resources/config/infrastructure/docker
+    volumes:
+      - .:/var/www/reprint
+    ports:
+      - "80:80"
