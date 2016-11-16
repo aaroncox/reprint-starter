@@ -1,20 +1,25 @@
-# Choose the locale to localize content for
-locale: 'en'
+# reprint config
+reprint:
+  # Choose the locale to localize content for
+  locale: 'en'
 
-# Choose a theme by name
+# blog config
 blog:
-  theme: 'foundation6-default'
+  # Choose a theme by name
+  theme: 'bootstrap3-default'
   title: 'reprint powered blog'
+  subtitle: 'blockchain powered blog'
+  # Filter the content to
+  filters:
+    # Accounts to load activity of
+    accounts:
+      'greymass':
+        - post
+        - reblog
+    tags:
+      - greymass
 
-# Blog Configuration
+# steemd connection
 steem:
   # Steem Node to retreive data
-  host: 'https://node.steem.ws'
-  # Accounts to load activity of
-  accounts:
-    'greymass':
-      - post
-      - reblog
-  # Only load posts with these tags
-  tags:
-    - greymass
+  host: 'http://node.steem.ws'
