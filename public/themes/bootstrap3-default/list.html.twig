@@ -1,0 +1,46 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<header class="text-center" style="margin-top:100px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1>
+                  #{{ category }}
+                </h1>
+                <span class="subheading"><b>- Posts tagged {{ category }} -</b></span>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {% for post in posts %}
+
+                  <h3 class="tech-title">
+                    <a href="/{{ post.getCategory() }}/@{{ post.author }}/{{ post.permlink }}">
+                      {{ post.title }}
+                    </a>
+                  </h3>
+                  {{ "%datetime%" | trans({'%datetime%' : post.ts | date("M d, Y, H:ia e")})}}
+                  <br>
+                  {% for tag in post.getTags() %}
+                    {% if tag %}
+                      <a href="/tagged/{{ tag }}">
+                        #{{ tag }}
+                      </a>
+                      {% if not loop.last %} - {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                  {% if not loop.last %}<hr class="steemer">{% endif %}
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</article>
+
+{% endblock %}
