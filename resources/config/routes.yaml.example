@@ -12,3 +12,10 @@ config.routes:
     pattern: /{category}/@{author}/{permlink}
     method: ['get']
     controller: 'Reprint\Controller\Blog::postAction'
+
+  # View Tagged Posts
+  tag_view:
+    name: 'tag_view'
+    pattern: /tagged/{category}
+    method: ['get']
+    controller: 'Reprint\Controller\Blog::listAction'
