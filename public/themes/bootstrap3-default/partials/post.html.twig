@@ -1,7 +1,8 @@
-<div class="col-sm-12 col-md-12 col-lg-4 post--Img animation-element slide-left">
-    <div class="post--Cover">
-        <img src="{{ post.image }}">
-    </div>
+<div class="col-sm-12 col-md-12 col-lg-4 post--Img slide-left">
+    <a href="/{{ post.getCategory() }}/@{{ post.author }}/{{ post.permlink }}">
+        <div class="post--Cover" style="background-image: url({{ post.image }})">
+        </div>
+    </a>
 </div>
 
 <div class="col-sm-12 col-md-12 col-lg-8 post--Header">
