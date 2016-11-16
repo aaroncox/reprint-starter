@@ -24,6 +24,7 @@
     {% for post in posts %}
       {% include 'partials/post.html.twig' with { post: post, preview: true } %}
     {% endfor %}
+    {% include 'partials/paginator.html.twig' %}
   </div>
 </div>
 
