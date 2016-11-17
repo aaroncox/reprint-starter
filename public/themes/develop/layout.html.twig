@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reprint Develop Template</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css">
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+    </head>
+    <body style="padding-top: 1em">
+
+        <div class="ui container">
+
+            {% include 'partials/header.html.twig' %}
+
+            <div class="ui active tab basic segment" data-tab="data">
+                {% block content '' %}
+            </div>
+            <div class="ui tab basic segment" data-tab="accounts">
+                {% include 'partials/accounts.html.twig' %}
+            </div>
+            <div class="ui tab basic segment" data-tab="tags">
+                {% include 'partials/tags.html.twig' %}
+            </div>
+            <div class="ui tab basic segment" data-tab="config">
+                {% include 'partials/config.html.twig' %}
+            </div>
+
+            {% include 'partials/footer.html.twig' %}
+
+        </div>
+
+        <script>
+            $('.ui.accordion')
+              .accordion({
+                selector: {
+                  trigger: '.title'
+                }
+              })
+            ;
+            $('.menu .item')
+              .tab()
+            ;
+        </script>
+
+    </body>
+</html>

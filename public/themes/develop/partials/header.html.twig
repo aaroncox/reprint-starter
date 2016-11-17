@@ -1,0 +1,21 @@
+<div class="ui tabular menu">
+  <span class="title item">
+    <div class="ui header">
+      Reprint Develop Mode
+    </div>
+  </span>
+  <a class="{{ (app.request_stack.getCurrentRequest.get('_route') == 'homepage') ? 'active' : '' }} item" href="/">
+    Homepage
+  </a>
+  <a class="{{ (app.request_stack.getCurrentRequest.get('_route') == 'account_view') ? 'active' : '' }} item" data-tab="accounts">
+    Accounts
+  </a>
+  {% if blog.filters.tags is defined %}
+  <a class="{{ (app.request_stack.getCurrentRequest.get('_route') == 'tag_view') ? 'active' : '' }} item" data-tab="tags">
+    Tags
+  </a>
+  {% endif %}
+  <a class="item" data-tab="config">
+    Config
+  </a>
+</div>

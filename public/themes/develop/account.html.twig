@@ -1,0 +1,57 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+  <div class="ui large header">
+    {{ account.name }}
+    <div class="sub header">
+      Account data loaded for {{ account.name }}
+    </div>
+  </div>
+
+  <div class="ui header">
+    links
+  </div>
+
+  <table class="ui definition table">
+    <tr>
+      <td>Blog URL</td>
+      <td>
+        <a href="/@{{ account.name }}">
+          /@{{ account.name }}
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Steemit URL</td>
+      <td>
+        <a href="https://steemit.com/@{{ account.name }}">
+          https://steemit.com/@{{ account.name }}
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>SteemDB URL</td>
+      <td>
+        <a href="https://steemdb.com/@{{ account.name }}">
+          https://steemdb.com/@{{ account.name }}
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <div class="ui header">
+    account model
+    <pre class="sub header">
+
+      Twig Examples:
+
+      {{ '{{ account.name }}' }}
+      {{ '{{ account.json_metadata }}' }}
+      {{ '{{ account.voting_power }}' }}
+    </pre>
+  </div>
+
+  {% include 'partials/table.html.twig' with {'data': account.export()} %}
+
+{% endblock %}

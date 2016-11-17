@@ -1,0 +1,14 @@
+<table class="ui definition small table">
+  {% for key, value in data %}
+  <tr>
+    <td class="collapsing">{{ key }}</td>
+    <td>
+      {% if value is iterable %}
+        {% include 'partials/table.html.twig' with {'data': value} %}
+      {% else %}
+        {{ value }}
+      {% endif %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>

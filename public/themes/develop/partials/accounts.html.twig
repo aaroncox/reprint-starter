@@ -1,0 +1,16 @@
+<div class="ui header">
+  accounts
+  <div class="sub header">
+    accounts loaded from the configuration
+  </div>
+</div>
+
+<div class="ui ordered list">
+  {% for account, data in blog.filters.accounts %}
+    <div class="item">
+      <a href="/@{{ account }}">
+        {{ account }}
+      </a>
+    </div>
+  {% endfor %}
+</div>

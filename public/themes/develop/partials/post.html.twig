@@ -1,0 +1,47 @@
+<div class="ui segment">
+  <div class="ui header">
+    links
+  </div>
+
+  <table class="ui definition table">
+    <tr>
+      <td>Blog URL</td>
+      <td>
+        <a href="/{{ post.getCategory() }}/@{{ post.author }}/{{ post.permlink }}">
+          /{{ post.getCategory() }}/@{{ post.author }}/{{ post.permlink }}
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Steemit URL</td>
+      <td>
+        <a href="https://steemit.com/{{ post.getCategory() }}/@{{ post.author }}/{{ post.permlink }}">
+          https://steemit.com/{{ post.getCategory() }}/@{{ post.author }}/{{ post.permlink }}
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>SteemDB URL</td>
+      <td>
+        <a href="https://steemdb.com/{{ post.getCategory() }}/@{{ post.author }}/{{ post.permlink }}">
+          https://steemdb.com/{{ post.getCategory() }}/@{{ post.author }}/{{ post.permlink }}
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <div class="ui header">
+    comment model
+    <pre class="sub header">
+
+      Twig Examples:
+
+      {{ '{{ post.title }}' }}
+      {{ '{{ post.author }}' }}
+      {{ '{{ post.body }}' }}
+    </pre>
+  </div>
+
+  {% include 'partials/table.html.twig' with {'data': post.export()} %}
+
+</div>

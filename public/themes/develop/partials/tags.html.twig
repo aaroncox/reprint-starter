@@ -1,0 +1,16 @@
+<div class="ui header">
+  tags
+  <div class="sub header">
+    tags loaded from the configuration
+  </div>
+</div>
+
+<div class="ui ordered list">
+  {% for tag in blog.filters.tags %}
+    <div class="item">
+      <a href="/tagged/{{ tag }}">
+        {{ tag }}
+      </a>
+    </div>
+  {% endfor %}
+</div>
