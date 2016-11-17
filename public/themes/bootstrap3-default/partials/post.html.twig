@@ -14,23 +14,35 @@
 
     <div class="post--ActionsContainer">
         <div class="post--Actions">
+
+            {% if display.element("payout") %}
             <div class="amount--Earned">
                 $ {{ post.total_payout_value }}
             </div>
-            
-            <div class="post--Numbers">
-                <div class="upvote--Icon">
-                    <span> {{ post.active_votes | length }}</span>
-                </div>
+            {% endif %}
 
+            <div class="post--Numbers">
+                {% if display.element("votes") %}
+                <div class="upvote--Icon">
+                    <span>{{ post.active_votes | length }}</span>
+                </div>
+                {% endif %}
+                {% if display.element("comments") %}
                 <div class="comment--Icon">
                     <span> {{ post.children }}</span>
                 </div>
+                {% endif %}
             </div>
         </div>
-        
+
         <div class="post--Meta">
-            {{ "%datetime%" | trans({'%datetime%' : post.ts | date("d M Y")})}} by <a href="#">{{ post.author }}</a> in <a href="#">{{ post.category }}</a>
+            {{ "%datetime%" | trans({'%datetime%' : post.ts | date("d M Y")})}}
+            {% if display.element("author") %}
+                by <a href="/@{{ post.author }}">{{ post.author }}</a>
+            {% endif %}
+            {% if display.element("category") %}
+                in <a href="/tagged/{{ post.category }}">{{ post.category }}</a>
+            {% endif %}
         </div>
 
         <span class="line"></span>
