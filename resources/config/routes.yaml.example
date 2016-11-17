@@ -19,3 +19,10 @@ config.routes:
     pattern: /tagged/{category}
     method: ['get']
     controller: 'Reprint\Controller\Blog::listAction'
+
+  # View Account
+  account_view:
+    name: 'account_view'
+    pattern: /@{account_name}
+    method: ['get']
+    controller: 'Reprint\Controller\Account::viewAction'

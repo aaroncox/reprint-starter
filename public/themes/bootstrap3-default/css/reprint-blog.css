@@ -143,6 +143,16 @@ hr.small {
   }
 }
 
+.profile-heading {
+
+}
+
+.profile-heading img {
+  margin-top: 50px;
+  max-height: 250px;
+  border-radius: 50%;
+}
+
 .intro-header {
   background-color: #777777;
   background: no-repeat center center;
