@@ -7,7 +7,7 @@
     <div class="ui list">
       {% for account, types in blog.filters.accounts %}
       <div class="item">
-        Account 
+        Account
         <a href="/@{{ account }}">
           {{ account }}
         </a>, using activity types
@@ -34,6 +34,8 @@
         <div class="content">
           {{ post.title }}
           <div class="sub header">
+            <strong>{{ post.created | date('Y-m-d') }}</strong>
+            |
             <strong>Tags:</strong>
             {% for tag in post.getTags() %}
               <code>[{{ tag }}]</code>
@@ -49,4 +51,3 @@
   </div>
 
 {% endblock %}
-
