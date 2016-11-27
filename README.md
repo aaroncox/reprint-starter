@@ -1,6 +1,6 @@
 **Note**: This software is actively being developed and some functionality may change.
 
-To start a new project using the reprint-starter, run the following command:
+To start a new project using the reprint-starter, PHP/Composer must be installed. Run the following composer command to create a new project:
 
 `composer create-project --stability=dev greymass/reprint-starter your-project-name`
 
