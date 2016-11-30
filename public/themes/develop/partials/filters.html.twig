@@ -1,0 +1,24 @@
+<div class="ui message">
+  <div class="header">{{ posts | length }} posts displayed of {{ total }} total (page {{ page }} of {{ pages }}).</div>
+  <div class="ui list">
+    {% for account, types in blog.filters.accounts %}
+    <div class="item">
+      Account
+      <a href="/@{{ account }}">
+        {{ account }}
+      </a>, using activity types
+      {% for type in types %}
+        <code>[{{ type }}]</code>
+      {% endfor %}
+    </div>
+    {% endfor %}
+    {% if blog.filters.tags is defined and blog.filters.tags is not empty %}
+    <div class="item">
+      Only display matching tags:
+      {% for tag in blog.filters.tags %}
+        [<a href="/tagged/{{ tag }}">{{ tag }}</a>]
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

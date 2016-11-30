@@ -1,0 +1,21 @@
+{% for post in posts %}
+  <div class="title">
+    <div class="ui header">
+      <i class="plus circle icon"></i>
+      <div class="content">
+        {{ post.title }}
+        <div class="sub header">
+          <strong>{{ post.created | date('Y-m-d') }}</strong>
+          |
+          <strong>Tags:</strong>
+          {% for tag in post.getTags() %}
+            <code>[{{ tag }}]</code>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    {% include 'partials/post.html.twig' with { post: post, preview: true } %}
+  </div>
+{% endfor %}

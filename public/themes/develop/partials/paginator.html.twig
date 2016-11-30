@@ -1,0 +1,14 @@
+<div class="ui secondary text menu">
+  {% if page > 1 %}
+  <div class="item">
+  <a class="ui button" href="?page={{ page - 1 }}">Previous Page</a>
+  </div>
+  {% endif %}
+  {% if page < pages %}
+  <div class="right menu">
+    <div class="item">
+      <a class="ui button" href="?page={{ page + 1 }}">Next Page</a>
+    </div>
+  </div>
+  {% endif %}
+</div>

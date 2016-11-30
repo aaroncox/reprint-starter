@@ -5,6 +5,7 @@
   </div>
 </div>
 
+{% if blog.filters.tags is defined %}
 <div class="ui ordered list">
   {% for tag in blog.filters.tags %}
     <div class="item">
@@ -14,3 +15,4 @@
     </div>
   {% endfor %}
 </div>
+{% endif %}
