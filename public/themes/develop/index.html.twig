@@ -3,8 +3,22 @@
 {% block content %}
 
   {% include 'partials/filters.html.twig' %}
-  {% include 'partials/paginator.html.twig' %}
-  <div class="ui accordion">
-    {% include 'partials/posts.html.twig' %}
+
+  <div class="ui grid">
+    <div class="row">
+
+      <div class="ten wide column">
+        {% include 'partials/paginator.html.twig' %}
+        <div class="ui accordion">
+          {% include 'partials/posts.html.twig' %}
+        </div>
+      </div>
+
+      <div class="six wide column">
+        {% include 'partials/sidebar.html.twig' %}
+      </div>
+
+    </div>
   </div>
+
 {% endblock %}
