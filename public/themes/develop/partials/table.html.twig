@@ -2,11 +2,11 @@
   {% for key, value in data %}
   <tr>
     <td class="collapsing">
-      {% if prefix is defined %}{{ prefix }}.{% endif %}{{ key }}
+      {% if prefix is defined %}{{ prefix }}{% endif %}{{ key }}{% if suffix is defined %}{{ suffix }}{% endif %}
     </td>
     <td>
       {% if value is iterable %}
-        {% include 'partials/table.html.twig' with {'data': value} %}
+        {% include 'partials/table.html.twig' with {'data': value, 'prefix': '[', 'suffix': ']'} %}
       {% else %}
         {{ value }}
       {% endif %}

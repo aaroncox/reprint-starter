@@ -42,6 +42,6 @@
     </pre>
   </div>
 
-  {% include 'partials/table.html.twig' with {'data': post.export(), 'prefix': 'post'} %}
+  {% include 'partials/table.html.twig' with {'data': post.export(), 'prefix': 'post[', 'suffix': ']'} %}
 
 </div>
