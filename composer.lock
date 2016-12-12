@@ -1389,12 +1389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "f87122dad2b07c804a40e92f53613e9b382064ff"
+                "reference": "c355df9479a065d243d17f708c8b65690ead4a9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/f87122dad2b07c804a40e92f53613e9b382064ff",
-                "reference": "f87122dad2b07c804a40e92f53613e9b382064ff",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/c355df9479a065d243d17f708c8b65690ead4a9f",
+                "reference": "c355df9479a065d243d17f708c8b65690ead4a9f",
                 "shasum": ""
             },
             "require": {
@@ -1463,7 +1463,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2016-12-02 11:40:47"
+            "time": "2016-12-08 16:03:21"
         },
         {
             "name": "symfony/inflector",
@@ -2050,12 +2050,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "f8e64b947e03ebba3d3a21363e24e92c46382e5b"
+                "reference": "e18625ca169b6cb3042db99630d23cf95e78887f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/f8e64b947e03ebba3d3a21363e24e92c46382e5b",
-                "reference": "f8e64b947e03ebba3d3a21363e24e92c46382e5b",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/e18625ca169b6cb3042db99630d23cf95e78887f",
+                "reference": "e18625ca169b6cb3042db99630d23cf95e78887f",
                 "shasum": ""
             },
             "require": {
@@ -2110,7 +2110,7 @@
                 "property path",
                 "reflection"
             ],
-            "time": "2016-11-19 20:35:20"
+            "time": "2016-12-08 15:31:48"
         },
         {
             "name": "symfony/routing",
@@ -2537,12 +2537,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "e1ff66e28655371a5f2cc15ab128fe7acc881b88"
+                "reference": "a3c861897142cbbaa55d89754b8850bd5a2cb6ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e1ff66e28655371a5f2cc15ab128fe7acc881b88",
-                "reference": "e1ff66e28655371a5f2cc15ab128fe7acc881b88",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/a3c861897142cbbaa55d89754b8850bd5a2cb6ff",
+                "reference": "a3c861897142cbbaa55d89754b8850bd5a2cb6ff",
                 "shasum": ""
             },
             "require": {
@@ -2592,7 +2592,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2016-11-29 11:12:53"
+            "time": "2016-12-08 15:31:48"
         },
         {
             "name": "symfony/web-profiler-bundle",
@@ -2600,12 +2600,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/web-profiler-bundle.git",
-                "reference": "d5a7fa876ff923ffa2f92c7cd888813c3425d04e"
+                "reference": "8bc8beb0843e38a861776bf84bf73fdd0210d645"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/d5a7fa876ff923ffa2f92c7cd888813c3425d04e",
-                "reference": "d5a7fa876ff923ffa2f92c7cd888813c3425d04e",
+                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/8bc8beb0843e38a861776bf84bf73fdd0210d645",
+                "reference": "8bc8beb0843e38a861776bf84bf73fdd0210d645",
                 "shasum": ""
             },
             "require": {
@@ -2655,7 +2655,7 @@
             ],
             "description": "Symfony WebProfilerBundle",
             "homepage": "https://symfony.com",
-            "time": "2016-12-02 12:16:33"
+            "time": "2016-12-08 16:03:21"
         },
         {
             "name": "symfony/yaml",
@@ -2712,12 +2712,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "fbbdeb53a7bcb003d8b643e3f5376d0efb136456"
+                "reference": "31801a18cee4ae16e013a7e1623ce999c96b3fa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/fbbdeb53a7bcb003d8b643e3f5376d0efb136456",
-                "reference": "fbbdeb53a7bcb003d8b643e3f5376d0efb136456",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/31801a18cee4ae16e013a7e1623ce999c96b3fa3",
+                "reference": "31801a18cee4ae16e013a7e1623ce999c96b3fa3",
                 "shasum": ""
             },
             "require": {
@@ -2766,7 +2766,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-12-05 09:21:22"
+            "time": "2016-12-08 09:24:50"
         }
     ],
     "packages-dev": [],
