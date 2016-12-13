@@ -6,9 +6,9 @@ reprint:
 # blog config
 blog:
   # Choose a theme by name
-  theme: 'bootstrap3-default'
-  title: 'reprint powered blog'
-  subtitle: 'blockchain powered blog'
+  theme: 'develop'
+  title: 'reprint'
+  subtitle: 'blockchain powered blog engine'
   # Filter the content to
   filters:
     # Accounts to load activity of
