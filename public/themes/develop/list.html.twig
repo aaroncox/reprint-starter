@@ -2,55 +2,29 @@
 
 {% block content %}
 
-  <div class="ui large header">
-    #{{ category }}
-    <div class="sub header">
-      Posts loaded with the tag <code>[{{ category }}]</code>
-    </div>
-  </div>
+  {% include 'partials/filters.html.twig' %}
 
-  <div class="ui message">
-    <div class="header">{{ posts | length }} posts loaded</div>
-    <div class="ui list">
-      {% for account, types in blog.filters.accounts %}
-      <div class="item">
-        Account 
-        <a href="/@{{ account }}">
-          {{ account }}
-        </a>, using activity types
-        {% for type in types %}
-          <code>[{{ type }}]</code>
-        {% endfor %}
-      </div>
-      {% endfor %}
-      {% if blog.filters.tags is defined %}
-      <div class="item">
-        Overriding config and only loading tags tags:
-        <code>[{{ category }}]</code>
-      </div>
-      {% endif %}
-    </div>
-  </div>
-  <div class="ui accordion">
-  {% for post in posts %}
-    <div class="title">
-      <div class="ui header">
-        <i class="plus circle icon"></i>
-        <div class="content">
-          {{ post.title }}
+  <div class="ui grid">
+    <div class="row">
+
+      <div class="ten wide column">
+        {% include 'partials/paginator.html.twig' %}
+        <div class="ui large header">
+          #{{ category }}
           <div class="sub header">
-            <strong>Tags:</strong>
-            {% for tag in post.getTags() %}
-              <code>[{{ tag }}]</code>
-            {% endfor %}
+            Posts loaded with the tag <code>[{{ category }}]</code>
           </div>
         </div>
+        <div class="ui accordion">
+          {% include 'partials/posts.html.twig' %}
+        </div>
       </div>
+
+      <div class="six wide column">
+        {% include 'partials/sidebar.html.twig' %}
+      </div>
+
     </div>
-    <div class="content">
-      {% include 'partials/post.html.twig' with { post: post, preview: true } %}
-    </div>
-  {% endfor %}
   </div>
 
 {% endblock %}
