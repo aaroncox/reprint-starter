@@ -96,12 +96,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greymass/reprint.git",
-                "reference": "7bdb6f614622264144112aab26889811dad132a9"
+                "reference": "bca2e31087f7f8b0cf411fad8ab0ec3f6465600d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greymass/reprint/zipball/7bdb6f614622264144112aab26889811dad132a9",
-                "reference": "7bdb6f614622264144112aab26889811dad132a9",
+                "url": "https://api.github.com/repos/greymass/reprint/zipball/bca2e31087f7f8b0cf411fad8ab0ec3f6465600d",
+                "reference": "bca2e31087f7f8b0cf411fad8ab0ec3f6465600d",
                 "shasum": ""
             },
             "require": {
@@ -137,7 +137,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2016-11-30 01:23:09"
+            "time": "2016-12-13 04:28:33"
         },
         {
             "name": "greymass/steemphp",
@@ -145,12 +145,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/greymass/steemphp.git",
-                "reference": "fd0b87d7a8381033cf7c2e588dfe79504ce5c575"
+                "reference": "494101055426532f7220c09a65cd1a3a603fe18c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/greymass/steemphp/zipball/fd0b87d7a8381033cf7c2e588dfe79504ce5c575",
-                "reference": "fd0b87d7a8381033cf7c2e588dfe79504ce5c575",
+                "url": "https://api.github.com/repos/greymass/steemphp/zipball/494101055426532f7220c09a65cd1a3a603fe18c",
+                "reference": "494101055426532f7220c09a65cd1a3a603fe18c",
                 "shasum": ""
             },
             "require": {
@@ -178,7 +178,7 @@
                     "email": "aaron.cox@greymass.com"
                 }
             ],
-            "time": "2016-11-20 12:46:48"
+            "time": "2016-12-13 04:25:57"
         },
         {
             "name": "marcojanssen/silex-routing-service-provider",
@@ -1048,12 +1048,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "872fd12b36bdd1561047adf7b34d5e420be99a82"
+                "reference": "6399a442d0ea1a0b44538df35256fd25b583c391"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/872fd12b36bdd1561047adf7b34d5e420be99a82",
-                "reference": "872fd12b36bdd1561047adf7b34d5e420be99a82",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/6399a442d0ea1a0b44538df35256fd25b583c391",
+                "reference": "6399a442d0ea1a0b44538df35256fd25b583c391",
                 "shasum": ""
             },
             "require": {
@@ -1096,7 +1096,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2016-12-02 12:07:28"
+            "time": "2016-12-10 14:25:01"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -1389,12 +1389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "c355df9479a065d243d17f708c8b65690ead4a9f"
+                "reference": "01e72a512993b5e222f7c7b08d950ccf1d140d52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/c355df9479a065d243d17f708c8b65690ead4a9f",
-                "reference": "c355df9479a065d243d17f708c8b65690ead4a9f",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/01e72a512993b5e222f7c7b08d950ccf1d140d52",
+                "reference": "01e72a512993b5e222f7c7b08d950ccf1d140d52",
                 "shasum": ""
             },
             "require": {
@@ -1463,7 +1463,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2016-12-08 16:03:21"
+            "time": "2016-12-10 10:52:34"
         },
         {
             "name": "symfony/inflector",
@@ -2600,12 +2600,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/web-profiler-bundle.git",
-                "reference": "8bc8beb0843e38a861776bf84bf73fdd0210d645"
+                "reference": "0928b510685a46e06e50f0d1d908db4350449181"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/8bc8beb0843e38a861776bf84bf73fdd0210d645",
-                "reference": "8bc8beb0843e38a861776bf84bf73fdd0210d645",
+                "url": "https://api.github.com/repos/symfony/web-profiler-bundle/zipball/0928b510685a46e06e50f0d1d908db4350449181",
+                "reference": "0928b510685a46e06e50f0d1d908db4350449181",
                 "shasum": ""
             },
             "require": {
@@ -2614,7 +2614,8 @@
                 "symfony/polyfill-php70": "~1.0",
                 "symfony/routing": "~2.8|~3.0",
                 "symfony/twig-bridge": "~2.8|~3.0",
-                "symfony/var-dumper": "~3.2"
+                "symfony/var-dumper": "~3.2",
+                "twig/twig": "~1.28|~2.0"
             },
             "conflict": {
                 "symfony/event-dispatcher": "<3.2"
@@ -2655,7 +2656,7 @@
             ],
             "description": "Symfony WebProfilerBundle",
             "homepage": "https://symfony.com",
-            "time": "2016-12-08 16:03:21"
+            "time": "2016-12-09 07:45:54"
         },
         {
             "name": "symfony/yaml",
