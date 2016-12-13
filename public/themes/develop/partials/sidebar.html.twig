@@ -1,7 +1,9 @@
 <div class="ui segment">
-  Recent Post Widget
+  <div class="ui header">
+    Recent Posts
+  </div>
   <div class="ui list">
-    {% for post in posts %}
+    {% for post in recent %}
       <div class="item">
         <a href="/{{ post.getCategory() }}/@{{ post.author }}/{{ post.permlink }}">
           {{ post.title }}
