@@ -12,3 +12,18 @@
     {% endfor %}
   </div>
 </div>
+
+<div class="ui segment">
+  <div class="ui header">
+    Recently Popular Tags
+  </div>
+  <div class="ui list">
+    {% for tag, count in categories | slice(0, 10) %}
+      <div class="item">
+        <a href="/tagged/{{ tag }}">
+          {{ tag }} ({{ count }})
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
