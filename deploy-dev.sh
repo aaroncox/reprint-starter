@@ -1,0 +1,1 @@
+rsync . reprint:/var/www/io_reprint_develop --rsh ssh --rsync-path="sudo rsync" --recursive -avz --no-perms --no-owner --no-group --verbose --exclude=config.yaml --exclude=.git* --exclude=var/* --checksum -a

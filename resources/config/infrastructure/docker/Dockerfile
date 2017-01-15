@@ -2,7 +2,6 @@ FROM ubuntu:16.04
 
 ENV php_conf /etc/php/7.0/fpm/php.ini
 ENV fpm_conf /etc/php/7.0/fpm/php-fpm.conf
-ENV composer_hash aa96f26c2b67226a324c27919f1eb05f21c248b987e6195cad9690d5c1ff713d53020a02ac8c217dbf90a7eacc9d141d
 
 RUN apt-get update && apt-cache search mbstring && apt-get install -y bash \
     software-properties-common \
@@ -42,7 +41,6 @@ RUN apt-get update && apt-cache search mbstring && apt-get install -y bash \
     mkdir -p /var/log/supervisor
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
-    php -r "if (hash_file('SHA384', 'composer-setup.php') === '${composer_hash}') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" && \
     php composer-setup.php --install-dir=/usr/bin --filename=composer && \
     php -r "unlink('composer-setup.php');"
 
